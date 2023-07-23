@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Webpage Design</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="university.css">
+    <!-- <style>
+        
+    </style> -->
+    
+</head>
+<body>
+    <section class="sub-page">
+            <div class = "navbar" id="navlinks">
+                <i class="fa fa-times" onclick="hidemenu()" id="close"></i>
+                <ul class="ul">
+                    <li><a href="universityhome.html">Home</a></li>
+                    <li><a href="universityabout.html">About</a></li>
+                    <li><a href="universitycourse.html">Course</a></li>
+                    <li><a href="universitycontact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()" id="bars"></i>
+        <div class="sideimage">
+            <img src="logo.png" alt="No image available" class="i1">
+        </div>
+        <h1>Contact Us</h1>
+    </section>
+    <section class="location">
+        <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+        src="https://www.openstreetmap.org/export/embed.html?bbox=-62.04673002474011%2C16.95487694424327%2C-61.60521696321666%2C17.196751341562923&amp;layer=mapnik" 
+        style="border: 1px solid black" class="iframe"></iframe>
+        <br>
+        <br/><small><a href="https://www.openstreetmap.org/#map=12/17.0759/-61.8260">View Larger Map</a></small>
+    </section>
+    <section id="contact">
+  
+        <h1 class="section-header">Contact</h1>
+        
+        <div class="contact-wrapper">
+        
+        <!-- Left contact page --> 
+          
+          <form id="contact-form" class="form-horizontal" role="form">
+             
+            <div class="form-group">
+              <div class="col-sm-12">
+                <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+              </div>
+            </div>
+      
+            <div class="form-group">
+              <div class="col-sm-12">
+                <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+              </div>
+            </div>
+      
+            <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+            
+            <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+              <div class="alt-send-button">
+                <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+              </div>
+            
+            </button>
+            
+          </form>
+          
+        <!-- Left contact page --> 
+          
+            <div class="direct-contact-container">
+      
+              <ul class="contact-list">
+                <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Jamnagar </span></i></li>
+                
+                <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">7016105366</a></span></i></li>
+                
+                <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">vinit@gmail.com</a></span></i></li>
+                
+              </ul>
+      
+              <hr>
+              <ul class="social-media-list">
+                <li><a href="#" target="_blank" class="contact-icon">
+                  <i class="fa fa-github" aria-hidden="true"></i></a>
+                </li>
+                <li><a href="#" target="_blank" class="contact-icon">
+                  <i class="fa fa-codepen" aria-hidden="true"></i></a>
+                </li>
+                <li><a href="#" target="_blank" class="contact-icon">
+                  <i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </li>
+                <li><a href="#" target="_blank" class="contact-icon">
+                  <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </li>       
+              </ul>
+              <hr>
+      
+              <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+      
+            </div>
+          
+        </div>
+        
+      </section>  
+    <section class="about">
+        <div class="about1">
+            <div class="cabout1">
+                <h1>About Us</h1>
+            </div>
+            <div class="dabout1">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, officiis minus fuga reiciendis molestias est consequuntur aperiam earum iste pariatur. ipsum dolor sit amet consectetur adipisicing elit. Labore suscipit quisquam quasi eum odio nihil accusamus inventore iusto ut. Fuga excepturi cumque eligendi temporibus.</p>
+            </div>
+                <div class="eabout1">
+                    <i class="fa fa-facebook-official" ></i>
+                    <i class="fa fa-instagram" ></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-linkedin" ></i>
+                </div>
+        </div>
+    </section>
+    <script>
+        var navbar = document.getElementById("navlinks");
+        function hidemenu(){
+            navbar.style.left = "-200px";
+        }
+        function showmenu(){
+            navbar.style.left = "0";
+        }
+    </script>
+</body>
+</html>

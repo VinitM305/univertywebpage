@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Webpage Design</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="university.css">
+    <!-- <style>
+        
+    </style> -->
+    
+</head>
+<body>
+    <section class="sub-page">
+            <div class = "navbar" id="navlinks">
+                <i class="fa fa-times" onclick="hidemenu()" id="close"></i>
+                <ul class="ul">
+                    <li><a href="universityhome.html">Home</a></li>
+                    <li><a href="universityabout.html">About</a></li>
+                    <li><a href="universitycourse.html">Course</a></li>
+                    <li><a href="universitycontact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()" id="bars"></i>
+        <div class="sideimage">
+            <img src="logo.png" alt="No image available" class="i1">
+        </div>
+        <h1>About Us</h1>
+    </section>
+    <section class="aboutus">
+        <div class="row">
+            <div class="row1" id="wlu">
+                <h1>We are the World's Largest University</h1>
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed error, sequi sapiente accusamus suscipit quo soluta nostrum temporibus fuga, aspernatur, ut ducimus! Voluptatibus doloremque cumque sunt asperiores? Quibusdam voluptatibus similique explicabo quisquam aspernatur quis ipsum sint dolorum ratione quod minima cum, eveniet voluptatum possimus.</div>
+                <button class="btn" id="btn1">Explore Now</button>
+            </div>
+            <div class="row1">
+                <img src="about.jpg" alt="No image" class="i8">
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="about1">
+            <div class="cabout1">
+                <h1>About Us</h1>
+            </div>
+            <div class="dabout1">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, officiis minus fuga reiciendis molestias est consequuntur aperiam earum iste pariatur. ipsum dolor sit amet consectetur adipisicing elit. Labore suscipit quisquam quasi eum odio nihil accusamus inventore iusto ut. Fuga excepturi cumque eligendi temporibus.</p>
+            </div>
+                <div class="eabout1">
+                    <i class="fa fa-facebook-official" ></i>
+                    <i class="fa fa-instagram" ></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-linkedin" ></i>
+                </div>
+        </div>
+    </section>
+    <script>
+        var navbar = document.getElementById("navlinks");
+        function hidemenu(){
+            navbar.style.left = "-200px";
+        }
+        function showmenu(){
+            navbar.style.left = "0";
+        }
+    </script>
+</body>
+</html>
